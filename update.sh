@@ -23,7 +23,7 @@ container="gentoo-temp-$base"
 ( set -x; bzcat -p "$name" | docker import - "$image" )
 
 docker rm -f "$container" > /dev/null 2>&1 || true
-( set -x; docker run -v /usr/portage:/usr/portage:ro --name "$container" "$image" bash -c 'emerge -C editor ssh man man-pages openrc e2fsprogs texinfo service-manager && emerge --depclean' )
+( set -x; docker run -v /usr/portage:/usr/portage:ro --name "$container" "$image" bash -c "echo 'PYTHON_TARGETS=\"python3_3\"' >> /etc/portage/make.conf && echo 'PYTHON_SINGLE_TARGET=\"python3_3\"' >> /etc/portage/make.conf && emerge --newuse --deep --with-bdeps=y @system @world && emerge -C editor ssh man man-pages openrc e2fsprogs texinfo service-manager && emerge --depclean" )
 
 xz="$base.tar.xz"
 ( set -x; docker export "$container" | xz -9 > "$xz" )
