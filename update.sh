@@ -3,7 +3,7 @@ set -e
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
-stage3="$(wget -qO- 'http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64.txt' | tail -n1)"
+stage3="$(wget -qO- 'http://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64.txt' | tail -n1 | awk '{print $1}' | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g" )"
 
 if [ -z "$stage3" ]; then
 	echo >&2 'wtf failure'
@@ -23,7 +23,7 @@ container="gentoo-temp-$base"
 ( set -x; bzcat -p "$name" | docker import - "$image" )
 
 docker rm -f "$container" > /dev/null 2>&1 || true
-( set -x; docker run -t -v /usr/portage:/usr/portage:ro --name "$container" "$image" bash -exc $'
+( set -x; docker run -t -v /usr/portage:/usr/portage:ro -v /usr/portage/distfiles:/usr/portage/distfiles --name "$container" "$image" bash -exc $'
 	export MAKEOPTS="-j$(nproc)"
 	pythonTarget="$(emerge --info | sed -n \'s/.*PYTHON_TARGETS="\\([^"]*\\)".*/\\1/p\')"
 	pythonTarget="${pythonTarget##* }"
