@@ -43,6 +43,7 @@ docker rmi "$image"
 
 echo 'FROM scratch' > Dockerfile
 echo "ADD $bz2 /" >> Dockerfile
+echo 'RUN echo MAKEOPTS=-j$(( $( nproc ) +1)) >> /etc/portage/make.conf' >> Dockerfile
 echo 'CMD ["/bin/bash"]' >> Dockerfile
 
 user="$(docker info | awk '/^Username:/ { print $2 }')"
