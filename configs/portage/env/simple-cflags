@@ -1,0 +1,7 @@
+###########
+# C Flags #
+###########
+CFLAGS="-Os"
+CFLAGS="${CFLAGS} -mtune=${CPU_TYPE}"
+CXXFLAGS="${CFLAGS}" 
+LDFLAGS="${LDFLAGS} -fno-lto"

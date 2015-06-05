@@ -1,0 +1,2 @@
+CFLAGS="${CFLAGS} -fno-fast-math"
+CXXFLAGS="${CFLAGS} -fno-fast-math"

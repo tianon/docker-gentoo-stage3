@@ -1,0 +1,372 @@
+app-admin/apachetop fam
+app-admin/eselect bash-competion
+app-admin/keepass aot
+app-admin/puppet augeas shadow vim-syntax
+app-admin/rsyslog snmp
+app-admin/sudo -ldap
+app-arch/libarchive xattr
+app-arch/tar xattr
+app-backup/bacula mysql -sqlite -sqlite3 vim-syntax
+app-backup/bareos mysql -sqlite -sqlite3 vim-syntax
+app-benchmarks/sysbench aio mysql
+app-cdr/k3b ffmpeg taglib
+app-crypt/heimdal -ssl
+app-crypt/pinentry caps
+app-crypt/qca qt4
+app-editors/kompozer custom-cflags custom-optimization system-sqlite
+app-editors/vim -X bash-completion python ruby vim-pager
+app-emulation/docker btrfs vim-syntax
+app-emulation/emul-linux-x86-sdl pulseaudio
+app-emulation/emul-linux-x86-soundlibs opengl pulseaudio
+app-emulation/emul-linux-x86-xlibs opengl
+app-emulation/ganeti bash-completion drbd kvm
+app-emulation/libvirt caps iscsi lvm nfs numa macvtap pcap python qemu sasl udev
+app-emulation/otopi java
+app-emulation/ovirt-host-deploy java
+app-emulation/qemu curl iscsi opengl pulseaudio qemu-ifup sasl spice threads tls vhost-net virtfs vde xattr
+app-emulation/qemu-kvm-spice pulseaudio sasl
+app-emulation/virt-manager gtk sasl spice
+app-emulation/virtualbox extensions
+app-emulation/wine custom-cflags gnutls jpeg lcms ldap mp3 osmesa perl png pulseaudio samba threads xcomposite xinerama win64
+app-emulation/xen custom-cflags pae
+app-emulation/xen-tools custom-cflags hvm ioemu pygrub
+app-eselect/eselect-php fpm
+app-misc/devtodo bash-completion 
+app-misc/pax-utils caps
+app-misc/screen multiuser
+app-misc/strigi dbus fam ffmpeg hyperestraier inotify qt4
+app-misc/tmux vim-syntax
+app-office/akonadi-server mysql soprano sqlite
+app-office/calligra kdepim
+app-office/gnucash mysql ofx quotes webkit
+app-office/libreoffice custom-cflags java mysql ofx pdfimport quotes webkit wiki-publisher
+app-portage/eix sqlite
+app-portage/genlop bash-completion
+app-portage/layman git subversion
+app-shells/bash plugins
+app-text/enchant aspell
+app-text/ghostscript-gpl cups dbus
+app-text/libwpd tools
+app-text/poppler cairo curl jpeg jpeg2k png qt4 qt5 
+dev-cpp/clucene threads
+dev-cpp/glog gflags
+dev-crypt/qca qt4
+dev-db/drizzle curl memcache
+dev-db/libdbi-drivers mysql
+dev-db/mariadb extraengine
+dev-db/mongodb v8
+dev-db/mysql cluster
+dev-db/percona cluster
+dev-db/percona-server cluster
+dev-db/percona-xtrabackup percona56
+dev-db/postgresql-base threads
+dev-db/postgresql-server uuid
+dev-db/sqlite -debug icu secure-delete unlock-notify
+dev-dotnet/libgdiplus cairo
+dev-games/cegui opengl
+dev-java/javatoolkit multilib
+dev-java/oracle-jdk-bin nsplugin source
+dev-java/sun-jdk nsplugin
+dev-java/swt cairo opengl webkit
+dev-lang/erlang smp kpoll
+dev-lang/perl ithreads
+dev-lang/php:5.5 opcache
+dev-lang/php bcmath bzip2 pcre pear calendar cli ctype crypt curl curlwrappers dba exif fpm ftp gd iconv imap intl json ldap mdstring mysql mysqli mysqlnd nls -opcache pcntl pdo pic posix session simplexml snmp soap sockets spell spl sqlite sqlite2 sqlite3 suhosin threads tidy tiff tokenizer truetype unicode xml xml2 xmlreader xmlrpc xmlwriter zip
+dev-lang/python berkdb sqlite -tk threads
+dev-lang/rubinius -llvm
+dev-lang/ruby-enterprise threads
+dev-lang/ruby threads
+dev-lang/tcl threads -truetype
+dev-lang/tk threads
+dev-libs/boost context icu
+dev-libs/cyrus-sasl crypt
+dev-libs/DirectFB -egl gles2 opengl multicore vdpau
+dev-libs/elfutils static-libs
+dev-libs/geoip city
+dev-libs/geoip perl-geoipupdate
+dev-libs/glib fam xattr
+dev-libs/jemalloc stats
+dev-libs/libdbusmenu-qt qt4
+dev-libs/libevent hiphop
+dev-libs/libpcre pcre16 pcre32
+dev-libs/libxml2 icu python
+dev-libs/libxslt -python
+dev-libs/nss utils
+dev-libs/openssl rfc3779
+dev-libs/protobuf vim-syntax
+dev-libs/weston wayland-compositor xwayland
+dev-libs/xerces-c curl threads
+dev-libs/xmlrpc-c threads
+dev-php/PEAR-MDB2 mysql mysqli
+dev-php/pecl-apc mmap
+dev-php/pecl-memcached json
+dev-php/pecl-memcache session
+dev-python/bucky runit
+dev-python/django mysql vhosts
+dev-python/graphite-web uwsgi -apache
+dev-python/ipython smp
+dev-python/pygobject threads
+dev-python/pyparsing python_targets_python3_2
+dev-python/PyQt4 X assistant declarative dbus multimedia opengl script sql svg webkit xmlpatterns
+dev-python/PyQt5 gui network printsupport svg webkit widgets
+dev-python/python-slip dbus
+dev-python/rssdler mechanize
+dev-python/spyder doc ipython
+dev-python/twisted-core crypt
+dev-qt/qt3support phonon kde
+dev-qt/qtcore icu qt3support
+dev-qt/qtdeclarative qt3support
+dev-qt/qtgui accessibility dbus egl evdev giff mng qt3support tiff xinerama
+dev-qt/qthelp qt3support
+=dev-qt/qtmultimedia-5.4.0_beta widgets
+dev-qt/qtmultimedia widgets
+dev-qt/qtopengl qt3support
+dev-qt/qtprintsupport opengl
+dev-qt/qtsql qt3support mysql 
+dev-qt/qtwebkit dbus kde icu libxml2 multimedia printsupport
+dev-ruby/json ruby_targets_ruby22
+dev-ruby/racc ruby_targets_ruby22
+dev-ruby/rake bash-completion ruby_targets_ruby22
+>=dev-ruby/rdoc-4.1.2 ruby_targets_ruby22
+>=dev-ruby/rubygems-2.4.5 ruby_targets_ruby22
+dev-tcltk/expect threads
+dev-util/cmake -qt5 vim-syntax
+dev-util/kdevplatform git subversion
+dev-vcs/git curl highlight subversion
+dev-vcs/subversion -dso extras perl sasl vim-syntax webdav-serf
+games-simulation/openttd dedicated -png
+games-util/steam-client-meta flash steamfonts streaming trayicon
+kde-base/activitymanager semantic-desktop
+kde-base/dolphin-plugins bazaar git mercurial subversion
+kde-base/dolphin semantic-desktop thumbnail
+kde-base/gwenview kipi semantic-desktop
+kde-base/kactivities semantic-desktop
+kde-base/kdeartwork-kscreensaver xscreensaver
+kde-base/kdebase-kioslaves lzma
+kde-base/kdebase-kioslaves samba
+kde-base/kdebase-runtime-meta semantic-desktop
+kde-base/kdelibs fam jpeg2k lzma openexr opengl upnp
+kde-base/kdepimlibs semantic-desktop
+kde-base/kdepim-runtime google kolab
+kde-base/kdeplasma-addons attica desktopglobe qalculate qwt scim
+kde-base/kdeplasma-addons semantic-desktop
+kde-base/kmix canberra pulseaudio
+kde-base/kopete jingle msn oscar otr skype sms v4l
+kde-base/krdc rdp vnc rdesktop
+kde-base/krunner opengl
+kde-base/kscreensaver opengl
+kde-base/ksnapshot kipi
+kde-base/ksplash xinerama
+kde-base/kwin gles opengl xinerama
+kde-base/libkcddb musicbrainz
+kde-base/libplasmaclock holidays opengl
+kde-base/marble plasma
+kde-base/okular chm ebook
+kde-base/phonon-kde pulseaudio xine
+kde-base/plasma-workspace rss semantic-desktop xinerama
+kde-base/pykde4 semantic-desktop
+kde-base/systemsettings -gtk opengl usb xinerama
+mail-client/evolution clutter map
+mail-client/mutt gnutls gpg imap sasl smime smtp sidebar
+mail-client/thunderbird crypt custom-optimization dbus -startup-notification system-sqlite libnotify custom-cflags
+mail-filter/spamassassin-fuzzyocr ocrad
+mail-mta/exim dovecot-sasl dnsdb dsn exiscan-acl maildir mysql sasl spf -radius
+media-gfx/digikam gphoto2
+media-gfx/exiv2 xmp
+media-gfx/gimp dbus
+media-gfx/imagemagick corefonts jpeg jpeg2k lzma perl png raw tiff truetype
+media-libs/chromaprint -libav tools
+media-libs/cogl gles2
+media-libs/freetype infinality
+media-libs/gd fontconfig jpeg png truetype
+media-libs/harfbuzz icu
+media-libs/imlib2 X
+media-libs/jasper jpeg opengl
+media-libs/libcanberra gstreamer gtk gtk3 pulseaudio
+media-libs/libpng apng
+media-libs/libsdl custom-cflags dga fusionsound gles opengl pulseaudio xinerama xrandr xvidmode
+media-libs/libtheora encode
+media-libs/mediastreamer pulseaudio theora v4l video
+media-libs/memphis vala
+media-libs/mesa g3dvl gbm gles gles1 gles2 llvm llvm-shared-libs openvg osmesa pic shared-dricore vdpau xa xorg xvmc
+media-libs/netpbm jpeg2k jpeg png tiff
+media-libs/openal pulseaudio
+media-libs/phonon designer gstreamer pulseaudio qt4 xine
+media-libs/phonon-gstreamer qt4
+media-libs/phonon-vlc qt4
+media-libs/raptor xml
+media-libs/xine-lib flac ffmpeg modplug opengl pulseaudio theora vaapi vdr vdpau xinerama xvmc
+media-plugins/alsa-plugins ffmpeg pulseaudio
+media-plugins/audacious-plugins flac ffmpeg mp3 ogg pulseaudio scrobbler vorbis
+media-plugins/gst-plugins-meta egl flac ffmpeg mp3 ogg pulseaudio vorbis
+media-sound/amarok -embedded ffmpeg lastfm opengl
+media-sound/beets beatport bpd chroma convert discogs echonest_tempo lastgenre replaygain
+media-sound/easytag -mp4
+media-sound/mpg123 pulseaudio
+media-sound/picard acoustid coverart ffmpeg
+media-sound/pulseaudio -X dbus system-wide udev
+media-sound/shntool flac
+media-sound/vorbis-tools kate
+media-tv/xbmc goom mysql pulseaudio rtmp vaapi vdpau webserver
+media-video/dvdrip ffmpeg mplayer subtitles xine
+media-video/ffmpeg aac cpudetection custom-cflags encode mmxext mp3 network openssl opus pulseaudio rtmp sse4 theora threads vaapi vdpau vorbis x264 xvid
+media-video/gpac ffmpeg pulseaudio theora
+media-video/handbrake css gtk
+media-video/libav threads x264 theora vaapi vdpau mp3
+media-video/mkvtoolnix lzo
+media-video/mplayer cddb cdparanoia cpudetection dga jpeg2k libmpeg2 lzo mmxext pulseaudio rtmp samba xvmc vdpau
+media-video/ogmrip matroska ogm srt theora
+media-video/transcode aac theora
+media-video/vlc cdda cddb dvd dbus matroska mp3 ogg opengl pulseaudio theora vaapi vorbis x264 xv
+media-video/xine-ui xinerama
+# move app-admin/eselect-php app-eselect/eselect-php
+net-analyzer/fping suid
+net-analyzer/icinga apache2 api perl plugins
+net-analyzer/mtr -gtk suid
+net-analyzer/nagios-plugins mysql nagios-dns nagios-ntp nagios-ping nagios-ssh snmp
+net-analyzer/nagstamon sound
+net-analyzer/net-snmp diskio extensible
+net-analyzer/nrpe command-args
+net-analyzer/rrdtool graph perl rrdcgi
+net-analyzer/wireshark geoip -gtk3 threads
+net-dns/avahi dbus
+net-dns/bind caps dlz geoip gssapi gost idn resolvconf threads urandom -ldap
+net-dns/bind-tools gssapi urandom
+net-firewall/ipset -modules
+net-firewall/pglinux cron
+net-fs/autofs -ldap 
+net-fs/cifs-utils ads upcall
+net-fs/nfs-utils caps nfsidmap nfsdcld nfsv41
+net-fs/samba ads addns bi_heimdal caps client aio fam ldap smbtav2 swat winbind
+net-fs/sheepdog bash-completion
+net-ftp/vsftpd caps
+net-im/ejabberd ldap mod_irc mod_muc mod_pubsub mod_statsdx -odbc ssl web
+net-im/empathy -networkmanager
+net-im/pidgin gnutls sasl -gstreamer
+net-im/telepathy-connection-managers icq irc jabber msn sip sipe
+net-irc/irssi perl
+net-irc/xchat dbus fastscroll hires-icons tcl
+net-libs/c-client kerberos
+net-libs/gtk-vnc gtk3 sasl
+net-libs/libproxy xulrunner
+net-libs/libvncserver threads
+net-libs/telepathy-qt farstream
+net-libs/xulrunner custom-cflags custom-optimization dbus system-sqlite
+net-mail/dovecot imapc lucene maildir managesieve sieve
+net-misc/asterisk calendar curl dahdi gtalk jabber jingle mysql snmp spandsp speex
+net-misc/asterisk-core-sounds alaw ulaw wav
+net-misc/asterisk-extra-sounds alaw ulaw wav
+net-misc/asterisk-moh-opsound alaw ulaw wav
+net-misc/cfengine examples html libvirt vim-syntax
+net-misc/curl adns hiphop idn
+net-misc/dhcp vim-syntax
+net-misc/iperf threads
+net-misc/mediatomb inotify lastfm libextractor thumbnail
+net-misc/ntp caps snmp vim-syntax
+net-misc/openconnect gnutls
+net-misc/openssh hpn -ldap -tcpd X509
+net-misc/openvpn iproute2
+net-misc/quagga doc
+net-misc/rsync xattr
+net-misc/spice-gtk gtk3 pulseaudio sasl usbredir
+net-misc/stunnel xforward
+net-misc/tor nat-pmp threads tor-hardening transparent-proxy
+net-misc/unison -gtk threads
+net-misc/vpnc resolvconf
+net-misc/x2goserver sqlite
+net-nds/openldap icu
+net-nds/rpcbind warmstarts
+net-p2p/ktorrent rss webinterface
+net-p2p/rtorrent ipv6 color daemon xmlrpc
+net-p2p/transmission qt5
+net-p2p/vuze source
+net-print/cups dbus ldap samba slp -usb -X
+net-print/foomatic-filters dbus
+net-print/gutenprint foomaticdb
+net-proxy/dansguardian commandline icap
+net-proxy/haproxy tools tfo vim-syntax
+net-proxy/privoxy threads
+net-proxy/squid caps ecap icap-client kqueue sasl ssl ssl-crtd snmp zero-penalty-hit
+net-wireless/bluez caps -cups gstreamer
+net-wireless/wpa_supplicant dbus qt4
+sys-apps/ack bash-completion
+sys-apps/coreutils caps xattr
+sys-apps/irqbalance caps
+sys-apps/lm_sensors sensord
+sys-apps/man lzma
+sys-apps/net-tools old-output
+sys-apps/pciutils -zlib
+sys-apps/portage build python3 xattr
+sys-apps/shadow xattr
+sys-apps/usermode-utilities fuse
+sys-apps/util-linux crypt tty-helpers
+sys-apps/watchdog nfs
+sys-auth/consolekit policykit
+sys-auth/polkit-qt qt4
+sys-block/open-iscsi slp
+sys-block/parted device-mapper
+sys-boot/grub device-mapper libzfs mount
+sys-boot/syslinux custom-cflags
+sys-cluster/ceph fuse radosgw zfs
+sys-cluster/drbd bash-completion heartbeat pacemaker
+sys-cluster/glusterfs fuse vim-syntax extras
+sys-cluster/openstack-meta cinder glance keystone neutron nova swift
+sys-cluster/pacemaker snmp smtp
+sys-devel/autogen libopts
+sys-devel/binutils static-libs
+sys-devel/distcc -gtk
+sys-devel/gcc awt gcj graphite -gtk lto
+sys-devel/llvm clang vim-syntax
+sys-fs/aufs2 hfs inotify nfs
+sys-fs/aufs3 doc fuse hfs inotify kernel-patch nfs
+sys-fs/eudev gudev keymap kmod hwdb 
+sys-fs/ntfs3g-ar ntfsprogs xattr
+sys-fs/ntfs3g ntfsprogs xattr
+sys-fs/udev gudev hwdb
+sys-fs/zfs bash-completion custom-cflags dracut kernel-builtin
+sys-kernel/dracut device-mapper net
+sys-kernel/geek-sources bld bfq ck ice pf rt symlink ubuntu uksm zfs
+sys-kernel/spl custom-cflags
+sys-libs/glibc gd
+sys-libs/pam -vim-syntax
+sys-libs/tdb tools
+sys-libs/zlib minizip
+virtual/ffmpeg aac encode -libav mp3 mmxext sse4 theora threads vaapi vdpau x264
+virtual/python-json external
+virtual/python-sqlite external
+>=virtual/rubygems-8 ruby_targets_ruby22
+virtual/udev gudev hwdb
+www-apps/gitlabhq mysql -postgres
+www-apps/owncloud mysql
+www-client/chromium proprietary-codecs pulseaudio widevine
+www-client/firefox dbus gstreamer libnotify pgo -startup-notification system-sqlite
+www-client/links jpeg directfb
+www-client/opera-next gstreamer kde
+www-client/pybugz bash-completion
+www-client/w3m -gtk fbcon imlib
+www-plugins/adobe-flash kde vdpau
+www-plugins/gnash egl kde nsplugin openvg vaapi
+www-plugins/lightspark curl ffmpeg gles nsplugin pulseaudio rtmp
+www-servers/apache threads
+www-servers/nginx aio chunk pcre-jit spdy syslog vim-syntax
+www-servers/tengine aio chunk pcre-jit spdy syslog vim-syntax
+x11-apps/xdpyinfo dga dmx xinerama
+x11-base/xorg-server xnest xvfb
+x11-drivers/ati-drivers disable-watermark
+x11-drivers/nvidia-drivers custom-cflags
+x11-drivers/xf86-video-ati glamor udev
+x11-libs/cairo X drm gallium opengl -qt4
+x11-libs/fltk cairo opengl xinerama
+x11-libs/gdk-pixbuf X
+x11-libs/glamor xv
+x11-libs/gtk+ vim-syntax xinerama
+x11-libs/libdrm libkms video_cards_vmware vim-syntax
+x11-libs/libva-vdpau-driver opengl
+x11-libs/libva X egl opengl
+x11-libs/libxcb xkb
+x11-libs/libxkbcommon X
+x11-libs/wxGTK gstreamer libnotify opengl
+x11-misc/google-gadgets dbus soup
+x11-misc/xscreensaver opengl xinerama
+x11-plugins/enigmail system-sqlite custom-optimization system-sqlite
+x11-plugins/pidgin-sipe telepathy

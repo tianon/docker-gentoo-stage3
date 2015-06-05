@@ -1,0 +1,3 @@
+CFLAGS="${CFLAGS} -pg"
+CXXFLAGS="${CFLAGS}"
+LDFLAGS="${LDFLAGS} -pg"

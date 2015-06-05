@@ -1,0 +1,2 @@
+CFLAGS="${CFLAGS} -fno-PIC -Dno-PIC"
+CXXFLAGS="${CFLAGS}"

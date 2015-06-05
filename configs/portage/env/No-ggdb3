@@ -1,0 +1,2 @@
+CFLAGS="${CFLAGS} -gno-gdb3 -gno-gdb"
+CXXFLAGS="${CFLAGS}"
