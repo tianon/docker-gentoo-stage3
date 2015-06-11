@@ -1,0 +1,4 @@
+CFLAGS="${CFLAGS} -fgraphite-identity"
+CFLAGS="${CFLAGS} -floop-interchange"
+CFLAGS="${CFLAGS} -floop-strip-mine"
+CFLAGS="${CFLAGS} -floop-block"

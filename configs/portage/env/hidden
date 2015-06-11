@@ -1,0 +1,2 @@
+CXXFLAGS="${CXXFLAGS} -fvisibility=hidden"
+CXXFLAGS="${CXXFLAGS} -fvisibility-inlines-hidden"

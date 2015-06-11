@@ -1,0 +1,1 @@
+LDFLAGS="-Wl,--as-needed -Wl,--hash-style=both"

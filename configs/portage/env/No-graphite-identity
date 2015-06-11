@@ -1,0 +1,2 @@
+CFLAGS="${CFLAGS} -fno-graphite-identity"
+CXXFLAGS="${CFLAGS} -fno-graphite-identity"

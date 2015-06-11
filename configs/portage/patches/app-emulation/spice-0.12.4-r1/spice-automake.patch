@@ -1,0 +1,22 @@
+--- spice-common/spice-protocol/configure.ac.orig	2014-01-04 22:52:28.000000000 -0800
++++ spice-common/spice-protocol/configure.ac	2014-01-04 22:53:05.000000000 -0800
+@@ -9,7 +9,7 @@
+ AC_CONFIG_MACRO_DIR([m4])
+ AM_CONFIG_HEADER([config.h])
+ 
+-AM_INIT_AUTOMAKE([dist-bzip2])
++AM_INIT_AUTOMAKE([dist-bzip2 subdir-objects])
+ AM_MAINTAINER_MODE
+ 
+ m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES([yes])])
+--- spice-common/configure.ac.orig	2014-01-04 22:58:56.000000000 -0800
++++ spice-common/configure.ac	2014-01-04 22:59:28.000000000 -0800
+@@ -13,7 +13,7 @@
+ m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
+ 
+ # Checks for programs
+-AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip tar-ustar foreign -Wall -Werror])
++AM_INIT_AUTOMAKE([1.11 dist-xz no-dist-gzip tar-ustar foreign -Wall -Werror subdir-objects])
+ AM_MAINTAINER_MODE
+ AM_SILENT_RULES([yes])
+ LT_INIT

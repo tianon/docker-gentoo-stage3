@@ -1,0 +1,11 @@
+#=app-admin/eselect-lua-1
+#=dev-lang/lua-5.2.3
+=dev-libs/libgcrypt-1.5.3-r100
+=media-libs/mesa-10.0.3
+=virtual/libintl-0-r1
+app-admin/salt
+dev-python/SaltTesting
+net-proxy/haproxy
+sys-kernel/geek-sources
+virtual/mysql
+www-servers/nginx
